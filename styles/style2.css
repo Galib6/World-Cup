@@ -1,0 +1,353 @@
+/*----------- FONTS----------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*----------------- First Banner --------------------*/
+.container1 {
+    display: flex;
+    background-color: black;
+    justify-content: space-evenly;
+    margin: 0px 50px;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.image img {
+    margin: 30px auto -8px auto;
+    width: 581px;
+    height: 681px;
+}
+
+.banner-text h1 {
+    margin: 0px;
+    font-weight: 700;
+    font-size: 70px;
+    color: white;
+}
+
+.banner-text p {
+    /* margin: 0px; */
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+}
+
+.banner-text a {
+    text-decoration: none;
+    color: white;
+    padding: 16px 25px;
+    background-color: #DD0000;
+    border-radius: 5px;
+}
+
+.overlay {
+    transition: transform .2s;
+    /* Animation */
+}
+
+.overlay:hover {
+    transform: scale(1.1);
+}
+
+/*------------------------ Main part -----------------------*/
+.blog-box {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    height: 312px;
+    width: 312px;
+    grid-gap: 30px;
+    padding: 20px;
+    border: 2px solid black;
+    margin-right: 50px;
+    background-color: black;
+    border-radius: 11.4423px;
+
+}
+
+.blog-box a {
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 12.5px;
+    padding: 20px 0px;
+    font-weight: 600;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+
+}
+
+.main-group-box {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 6%;
+}
+
+.flag-vs-flag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.flag-vs-flag h3 {
+    margin: 0px 20px;
+}
+
+.match h2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+
+}
+
+.match p {
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    color: #4D4D4D;
+}
+
+.group-box {
+    border: 1px solid #E8E8E8;
+    padding: 53px 33px;
+    border-radius: 12.5px;
+}
+
+.matches {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+}
+
+/* ----------last part -------------------*/
+.last-part {
+    background-color: black;
+}
+
+.goal {
+    padding: 80px 0px;
+    text-align: center;
+    color: white;
+    border-bottom: 1px dotted white;
+    margin: 0px 200px;
+}
+
+.hyperlinks {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20%;
+    /* padding-bottom: 100px; */
+    margin-top: 70px;
+
+}
+
+.hyperlinks a {
+    text-decoration: none;
+    color: #B9B9B9;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 20px;
+}
+
+.social-icons a {
+    font-size: 30px;
+    color: white;
+    margin: 30px 6px 40px 30px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center
+}
+
+.view-all-button {
+    display: none;
+}
+
+/* -----------Responsiveness ------------*/
+
+@media only screen and (max-width:688px) {
+    .container1 {
+        padding-top: 20px;
+        flex-direction: column;
+        width: 100%;
+        margin: 0px;
+        align-items: center;
+
+    }
+
+    .image img {
+        margin: 30px auto -7px auto;
+        width: 233px;
+        height: 245px;
+    }
+
+    .banner-text h1 {
+        margin: 0px;
+        font-size: 22px;
+        text-align: center;
+
+    }
+
+    .banner-text p {
+        font-weight: 400;
+        font-size: 7px;
+        text-align: center;
+    }
+
+    .banner-text a {
+        padding: 6px 5px;
+        border-radius: 5px;
+        margin: 0px 100px;
+
+    }
+
+    .banner-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    .main-group-box {
+        display: grid;
+        grid-template-columns: 335px;
+        width: 100%;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .matches {
+        display: grid;
+        grid-template-columns: 335px;
+        align-self: center;
+        justify-self: center;
+
+
+    }
+
+    .blog-box {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        height: 250px;
+        width: 250px;
+        grid-gap: auto;
+        padding: 20px;
+        border: 0px solid black;
+        margin-right: 0px;
+        background-color: white;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .blog-box a {
+        /* text-align: center; */
+        border: 2px solid #E8E8E8;
+        padding: 10px 0px;
+        font-weight: 600;
+        font-size: 25px;
+        background-color: white;
+        color: black;
+
+    }
+
+    .goal {
+        margin: 0px;
+        text-align: center;
+    }
+
+    .hyperlinks {
+        flex-direction: column;
+        justify-content: center
+    }
+
+    .hyperlinks a {
+        text-align: center;
+    }
+}
+
+
+
+/* -----Tablet view------- */
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .container1 {
+        width: 100%;
+        margin: 0px;
+        justify-content: center;
+
+
+    }
+
+    .image img {
+        margin: 30px auto -7px auto;
+        width: 323px;
+        height: 340px;
+    }
+
+    .banner-text h1 {
+        margin: 0px;
+        font-size: 30px;
+    }
+
+    .banner-text p {
+        font-weight: 400;
+        font-size: 11px;
+    }
+
+    .banner-text a {
+        padding: 12px;
+        border-radius: 5px;
+    }
+
+    .blog-box {
+        grid-template-columns: repeat(3, 1fr);
+        background-color: white;
+        height: auto;
+        width: auto;
+        align-self: center;
+        justify-self: center;
+        border: none;
+        margin-bottom: 30px;
+    }
+
+    .blog-box a {
+        border: 2px solid black;
+        padding: 15px 5px;
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+
+    .main-group-box {
+        grid-template-columns: auto;
+    }
+
+    .matches {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hyperlinks {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .view-all-button {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .view-all-button a {
+        text-decoration: none;
+        padding: 10px;
+        background-color: #DD0000;
+        color: white;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+}
